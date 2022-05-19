@@ -1,7 +1,7 @@
 {
-  "name": "logseq-starter-plugin",
-  "version": "1.0",
-  "description": "Starter Plugin",
+  "name": "logseq-web-parser",
+  "version": "1.0.0",
+  "description": "Web Parser",
   "main": "dist/index.html",
   "targets": {
     "main": false
@@ -14,14 +14,17 @@
   "author": "Aryan Sawhney",
   "license": "MIT",
   "dependencies": {
-    "@logseq/libs": "0.0.1-alpha.34"
+    "@logseq/libs": "0.0.1-alpha.35",
+    "@postlight/mercury-parser": "^2.2.1",
+    "node-html-markdown": "^1.2.0"
   },
   "logseq": {
-    "id": "logseq-starter-plugin",
-    "title": "logseq-starter-plugin",
+    "id": "logseq-web-parser",
+    "title": "logseq-web-parser",
     "icon": "./icon.png"
   },
   "devDependencies": {
-    "parcel": "^2.0.0"
+    "parcel": "^2.0.0",
+    "querystring-es3": "^0.2.1"
   }
 }
