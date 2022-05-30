@@ -1,2 +1,2 @@
-# logseq-plugin-starter-template
-A quick and easy to use template to get you going from the get go
+# Logseq Web Parser
+A simple plugin to parse the contents of a website and insert it under a link

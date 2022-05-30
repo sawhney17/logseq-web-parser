@@ -2,7 +2,6 @@
 import { IBatchBlock } from "@logseq/libs/dist/LSPlugin.user";
 
 const isEmptyLine = (str: string) => /^\s*$/.test(str);
-
 export function splitBlock(blockContent: string) {
   const lines = blockContent.split("\n").filter((line) => !isEmptyLine(line));
   if (lines.length === 1) {
@@ -64,7 +63,7 @@ export function splitBlock(blockContent: string) {
       }
 
       if (top.indent === indent) {
-        console.log(top, nextBlock);
+
         if (top.parent) {
           top.parent.children!.push(nextBlock);
         } else {
@@ -73,7 +72,6 @@ export function splitBlock(blockContent: string) {
         top.block = nextBlock;
       } else {
         // 缩进没对齐的情况
-        console.log(JSON.stringify(top));
         top.block.children.push(nextBlock);
         stack.push({
           indent,
@@ -84,10 +82,8 @@ export function splitBlock(blockContent: string) {
     }
   });
 
-  console.log(JSON.stringify(batchBlock));
 
 //if the content of any block is empty and has no children, filter it out
-     console.log();
   return batchBlock.filter((block) => {
     if (block.content.length < 3 ) {
         return false;
