@@ -1,11 +1,12 @@
 {
   "name": "logseq-web-parser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Web Parser",
   "main": "dist/index.html",
   "targets": {
     "main": false
   },
+  "effect": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "parcel build --no-source-maps index.html --public-url ./"
