@@ -1,6 +1,6 @@
 {
   "name": "logseq-web-parser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Web Parser",
   "main": "dist/index.html",
   "targets": {
